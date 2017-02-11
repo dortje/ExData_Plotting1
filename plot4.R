@@ -11,6 +11,8 @@ source("ExData_Plotting1/read_data.R")
 
 ## constructing plot 1
 
+print("Plotting ...")
+
 png("ExData_Plotting1/plot2.png", width=480, height=480)
 
 dev.off()

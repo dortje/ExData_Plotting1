@@ -10,6 +10,8 @@ source("ExData_Plotting1/read_data.R")
 
 ## constructing plot 1
 
+print("Plotting ...")
+
 png("ExData_Plotting1/plot1.png", width=480, height=480)
 hist(household_data$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main ="Global Active Power")
 dev.off()

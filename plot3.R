@@ -10,6 +10,7 @@ print("Reading data ...")
 source("ExData_Plotting1/read_data.R")
 
 ## constructing plot 3
+print("Plotting ...")
 
 png("ExData_Plotting1/plot3.png", width=480, height=480)
 plot(household_data$Time, household_data$Sub_metering_1, type="n", ylab="Energy sub metering", xlab="")

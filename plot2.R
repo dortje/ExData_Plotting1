@@ -11,6 +11,8 @@ source("ExData_Plotting1/read_data.R")
 
 ## constructing plot 2
 
+print("Plotting ...")
+
 png("ExData_Plotting1/plot2.png", width=480, height=480)
 plot(household_data$Time, household_data$Global_active_power, type="l", xlab="", ylab="Global Active Power (kilowatts)")
 dev.off()
