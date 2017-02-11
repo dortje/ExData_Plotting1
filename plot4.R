@@ -13,8 +13,21 @@ source("ExData_Plotting1/read_data.R")
 
 print("Plotting ...")
 
-png("ExData_Plotting1/plot2.png", width=480, height=480)
+png("ExData_Plotting1/plot4.png", width=480, height=480)
+par(mfrow=c(2,2)) # setting 4 plotting spaces (2x2) on the grpahics device
+# Plot 1 (upper left)
+plot(household_data$Time, household_data$Global_active_power, type="l", xlab="", ylab="Global Active Power")
+# Plot 2 (upper right)
+plot(household_data$Time, household_data$Voltage, type="l", xlab="datetime", ylab="Voltage")
+# Plot 3 (lower left)
+plot(household_data$Time, household_data$Sub_metering_1, type="n", ylab="Energy sub metering", xlab="")
+points(household_data$Time, household_data$Sub_metering_1, type="l", col="black")
+points(household_data$Time, household_data$Sub_metering_2, type="l", col="red")
+points(household_data$Time, household_data$Sub_metering_3, type="l", col="blue")
+legend("topright", col=c("black", "red", "blue"), legend=colnames(household_data)[7:9], lty=1, bty="n", cex=0.9)
+# Plot 4 (lower right)
+plot(household_data$Time, household_data$Global_reactive_power, type="l", xlab="datetime", ylab="Globale_reactive_power")
 
 dev.off()
 
-print("Done. Plot 2 can be found in ExData_Plotting1/plot2.png")
+print("Done. Plot 4 can be found in ExData_Plotting1/plot4.png")
