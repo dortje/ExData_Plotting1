@@ -1,3 +1,23 @@
+## Remarks from the Programmer
+This GitHub repo contains the four different plots as png along with the code to construct them.
+The files which where added by the programmer comprise:
+* README.md - this file (the original was adapted by addng one paragraph "Remarks from the Programmer")
+* plot1.R - the code to construct the plot1 to a png file
+* plot1.png - the plot1 as a png file
+* plot2.R - the code to construct the plot2 to a png file
+* plot2.png - the plot2 as a png file
+* plot3.R - the code to construct the plot3 to a png file
+* plot3.png - the plot3 as a png file
+* plot4.R - the code to construct the plot4 to a png file
+* plot4.png - the plot4 as a png file
+* read_data.R - Since reading the data into a data frame is required for constructing all four plots, the code has been sourced out to a separate file. In all of the four plot<x>.R files, the code of this file is integrated via the source() command.
+
+If you want to try out the code, please prepare your working environment as follows:
+* Put the data into a subdirectory of your current working directory in R: <current_WD>/exdata_data_household_power_consumption/household_power_consumption.txt
+* Put the content of this repo into another subfolder of your current working directory in R: <current_WD>/ExData_Plotting1/ (best way is to just clone this repo into your working directory)
+* (optional): The labels on the time axis will be presented in the language which is specified by your locale setting. You can set your locale to english with the following command: Sys.setlocale(category = "LC_ALL", locale = "english")
+
+
 ## Introduction
 
 This assignment uses data from
